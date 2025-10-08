@@ -1,0 +1,49 @@
+Heriyanto 2331016
+proyek tentang mengukur spending lvl
+sumber Kaggle 
+
+Judul Proyek:
+Fuzzy Logic untuk Menentukan Tingkat Pengeluaran Berdasarkan Nilai Transaksi Harian
+
+Deskripsi Singkat:
+Proyek ini bertujuan untuk menerapkan logika fuzzy pada data transaksi harian untuk mengelompokkan tingkat pengeluaran berdasarkan besar nilai transaksi (Amount). Dataset yang digunakan berasal dari Daily Transaction Dataset di Kaggle dan disederhanakan menjadi 100 baris dengan 3 kolom utama: Amount, Mode, dan Income/Expense.
+
+Dengan menggunakan library scikit-fuzzy, dibuat tiga fungsi keanggotaan (membership functions) untuk variabel Amount, yaitu:
+
+Low (pengeluaran kecil)
+
+Medium (pengeluaran sedang)
+
+High (pengeluaran besar)
+
+Berdasarkan fungsi keanggotaan tersebut, sistem fuzzy menghasilkan satu kolom baru SpendingLevel yang menunjukkan tingkat pengeluaran setiap transaksi. Nilai SpendingLevel dibagi menjadi tiga kategori: Low, Medium, dan High.
+
+Hasil akhir divisualisasikan dalam bentuk plot distribusi untuk melihat pola umum pengeluaran dari dataset tersebut.
+
+File proyek yang disertakan:
+
+transaction.csv – Dataset bersih (100 baris, 3 kolom)
+
+transaction.ipynb – Notebook Python berisi implementasi fuzzy logic
+
+requirements.txt – Daftar library yang digunakan
+
+description.txt – Deskripsi singkat proyek
+
+Library yang digunakan:
+
+pandas
+
+numpy
+
+matplotlib
+
+seaborn
+
+scikit-fuzzy
+
+Output utama:
+
+Kolom baru SpendingLevel
+
+Plot distribusi nilai transaksi (Amount) dan tingkat pengeluaran (SpendingLevel)
